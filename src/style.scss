@@ -1,0 +1,144 @@
+.timesheet
+{
+    width: 720px;
+    height: 292px;
+    margin: 0 auto;
+}
+
+.timesheet
+{
+    position: relative;
+
+    border-top: 1px solid rgba(250, 250, 250, .5);
+    background-color: rgba(51, 51, 51, 1);
+
+    &.color-scheme-default
+    {
+        .bubble-default
+        {
+            background-color: RGBA(252, 70, 74, 1); // red
+        }
+        .bubble-lorem
+        {
+            background-color: RGBA(154, 202, 39, 1); // green
+        }
+        .bubble-ipsum
+        {
+            background-color: RGBA(60, 182, 227, 1); // blue
+        }
+        .bubble-dolor
+        {
+            background-color: RGBA(244, 207, 48, 1); // yellow
+        }
+        .bubble-sit
+        {
+            background-color: RGBA(169, 105, 202, 1); // cyan
+        }
+    }
+
+
+    .scale
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        float: left;
+
+        height: 100%;
+
+        section
+        {
+            font-family: 'Signika Negative';
+            font-size: 13px;
+            font-weight: lighter;
+            line-height: 24px;
+
+            float: left;
+
+            width: 59px;
+            height: 100%;
+
+            text-align: center;
+
+            color: rgba(250, 250, 250, .8);
+            border-left: 1px dashed rgba(250, 250, 250, .2);
+        }
+    }
+
+    .data
+    {
+        font-family: 'Signika Negative';
+        font-size: 13px;
+
+        overflow: hidden;
+
+        margin: 28px 0 0 0;
+        padding: 0;
+
+        list-style-type: none;
+
+        text-align: left;
+
+        color: rgba(250, 250, 250, .8);
+
+        li
+        {
+            line-height: 22px;
+
+            position: relative;
+
+            display: block;
+            clear: both;
+
+            height: 21px;
+            margin: 0 0 3px 0;
+
+            white-space: nowrap;
+
+            &:hover
+            {
+                .bubble
+                {
+                    opacity: 1;
+                }
+            }
+
+            .date
+            {
+                font-size: 14px;
+
+                color: rgba(181, 181, 181, 1);
+            }
+
+            .label
+            {
+                font-size: 14px;
+                font-weight: lighter;
+                line-height: 21px;
+
+                padding-left: 5px;
+
+                white-space: nowrap;
+
+                color: rgba(151, 151, 150, 1);
+            }
+
+            .bubble
+            {
+                position: relative;
+                top: 7px;
+
+                display: block;
+                float: left;
+
+                width: 24px;
+                height: 7px;
+                margin: 0 10px 0 0;
+
+                opacity: .7;
+                border-radius: 4px;
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+<div class="timesheet color-scheme-default" [attr.data-min]='timesheet.min' [attr.data-max]='timesheet.max'>
+    <div class="scale">
+        <section *ngFor="let year of years">
+            {{year}}
+        </section>
+    </div>
+    <ul class="data">
+        <li *ngFor="let bubble of bubbles" [attr.data-start]='bubble.start' [attr.data-end]='bubble.end'>
+            <bubble [bubble]="bubble"></bubble>
+        </li>
+    </ul>
+</div>
