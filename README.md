@@ -10,7 +10,7 @@ A clone version of [timesheet.js](https://sbstjn.github.io/timesheet.js) (JavaSc
 
 ### app.component.ts
 ```javascript
-  timesheet = new Timesheet(2002, 2013, [
+  timesheet = new Timesheet(2002, 2014, [
       new TimesheetItem('2002', '2002-09', 'A freaking awesome time', 'lorem'),
       new TimesheetItem('2002-06', '2003-09', 'Some great memories', 'ipsum'),
       new TimesheetItem('2003', '2004', 'Had very bad luck', 'default'),
