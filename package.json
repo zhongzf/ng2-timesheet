@@ -9,6 +9,10 @@
     "angular2",
     "timesheet"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhongzf/ng2-timesheet.git"
+  },
   "author": "zhongzf <zhongzf@126.com>",
   "license": "MIT",
   "dependencies": {
