@@ -14,18 +14,18 @@ npm install ng2-timesheet --save
 
 ### app.component.ts
 ```javascript
-// import Models and Component
-import { TimesheetItem } from 'ng2-timesheet/src/models/timesheet-item';
-import { Timesheet } from 'ng2-timesheet/src/models/timesheet';
-import { TimesheetComponent } from 'ng2-timesheet/src/timesheet.component';
+import { Component, OnInit } from '@angular/core';
+import { TimesheetItem, Timesheet, TimesheetComponent } from 'ng2-timesheet';
 
-    ...
-    // add Directive reference
-    directives: [TimesheetComponent]
+@Component({
+  moduleId: module.id,
+  selector: 'my-app',
+  templateUrl: 'app.component.html',
+  directives: [TimesheetComponent]
+})
+export class AppComponent implements OnInit {
+  title = 'Angular 2 Timesheet Demo';
 
-    ...
-
-  // define data model
   timesheet = new Timesheet(2002, 2014, [
       new TimesheetItem('2002', '2002-09', 'A freaking awesome time', 'lorem'),
       new TimesheetItem('2002-06', '2003-09', 'Some great memories', 'ipsum'),
@@ -39,9 +39,14 @@ import { TimesheetComponent } from 'ng2-timesheet/src/timesheet.component';
       new TimesheetItem('2010-02', '2010-05', 'LOST Season #5', 'lorem'),
       new TimesheetItem('2008-09', '2010-06', 'FRINGE #1 & #2', 'ipsum')
   ]);
+
+  constructor() { }
+  ngOnInit() { }
+}
 ```
 
 ### app.component.html
 ```html
+<h1>{{title}}</h1>
 <timesheet [timesheet]='timesheet'></timesheet>
 ```

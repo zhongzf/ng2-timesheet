@@ -1,10 +1,11 @@
 {
   "name": "ng2-timesheet",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "start": "lite-server",
     "build": "tsc && gulp scss"
   },
+  "main": "index.js",
   "keywords": [
     "angular2",
     "timesheet"

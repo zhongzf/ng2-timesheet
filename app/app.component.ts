@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TimesheetComponent } from '../src/timesheet.component';
-import { Timesheet } from '../src/models/timesheet';
-import { TimesheetItem } from '../src/models/timesheet-item';
+import { TimesheetItem, Timesheet, TimesheetComponent } from '../';
 
 @Component({
   moduleId: module.id,
